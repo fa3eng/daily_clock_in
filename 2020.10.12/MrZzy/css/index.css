@@ -1,0 +1,52 @@
+body {
+    background: rgb(66, 63, 63);
+}
+
+.bgd {
+    position: relative;
+    height: 336px;
+    background: url(../images/bg1.png);
+    margin-top: 200px;
+    animation: bgd_move 60s linear infinite forwards 4s;
+}
+
+.bear {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 200px;
+    height: 100px;
+    background: url(../images/bear.png) no-repeat;
+    animation: bear .8s steps(8) infinite forwards, move 4s linear forwards;
+}
+
+@keyframes bear {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1600px 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes bgd_move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -3840px 0;
+    }
+}
