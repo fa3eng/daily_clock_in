@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    color: #666;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+div {
+    box-sizing: border-box;
+}
+
+/* 搜索模块 */
+.search-index {
+    display: flex;
+    /* 固定定位跟父级没有关系，它以屏幕为准 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    /*  -webkit-兼容性 */
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /* 固定的盒子必须有宽度 */
+    width: 100%;
+    height: 44px;
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    min-width: 320px;
+    max-width: 540px;
+
+}
+
+.search {
+    position: relative;
+    flex: 1;
+    height: 26px;
+    border: 1px solid #ccc;
+    background-color: rgb(255, 255, 255);
+    margin: 8px 10px;
+    border-radius: 5px;
+    padding-left: 30px;
+    font-size: 12px;
+    color: #666;
+    line-height: 24px;
+}
+
+.search::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/sprite.png)no-repeat -59px -279px;
+    background-size: 104px;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    /* background-color: purple; */
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+}
+
+.user::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png)no-repeat -59px -194px;
+    background-size: 104px;
+    margin: 4px auto -2px;
+}
