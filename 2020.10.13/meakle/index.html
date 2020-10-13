@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在一个盒子内实现水平垂直居中</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            background-color: pink;
+
+        }
+
+        .son {
+            width: 50px;
+            height: 60px;
+
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="son"></div>
+    </div>
+
+</body>
+
+</html>
