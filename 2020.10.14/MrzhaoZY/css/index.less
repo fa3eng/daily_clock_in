@@ -1,0 +1,142 @@
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.333333rem;
+}
+
+body {
+    width: 10rem;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 1.066667rem;
+    background-color: #323232;
+    text-align: center;
+    line-height: 1.066667rem;
+    color: #fff;
+    font-size: 0.32rem;
+    border-bottom: 1px solid #da8f2a;
+}
+
+.nav {
+    display: flex;
+
+    flex-wrap: wrap;
+    background: -webkit-linear-gradient(left, #9588a6, #b6aba9, #e68463, #8f95b4, #a792a2);
+
+    a {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.066667rem;
+
+        .nav-item {
+            overflow: hidden;
+            width: 1.8rem;
+            height: 1.8rem * (340 / 242);
+            background: url(../images/xiao.png) no-repeat;
+            background-size: 135 * 0.066667rem auto;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.03);
+            }
+        }
+
+        &:nth-child(2) .nav-item {
+            background-position: -1.8rem 0;
+        }
+
+        &:nth-child(3) .nav-item {
+            background-position: -1.8 - 1.8rem 0;
+        }
+
+        &:nth-child(4) .nav-item {
+            background-position: -1.8 - 1.8 - 1.8rem 0;
+        }
+
+        &:nth-child(5) .nav-item {
+            background-position: -1.8 - 1.8 - 1.8 - 1.8rem 0;
+        }
+
+        &:nth-child(6) .nav-item {
+            background-position: 0 -1.8rem * (340 / 242);
+        }
+
+        &:nth-child(7) .nav-item {
+            background-position: -1.8rem -1.8rem * (340 / 242);
+        }
+
+        &:nth-child(8) .nav-item {
+            background-position: -1.8 - 1.8rem -1.8rem * (340 / 242);
+        }
+
+        &:nth-child(9) .nav-item {
+            background-position: -1.8 - 1.8 - 1.8rem -1.8rem * (340 / 242);
+        }
+
+        &:nth-child(10) .nav-item {
+            background-position: -1.8 - 1.8 - 1.8 - 1.8rem -1.8rem * (340 / 242);
+        }
+
+        &:nth-child(-n+5) {
+            margin-bottom: 0.066667rem;
+        }
+
+        span {
+            display: block;
+            height: 0.4rem;
+            line-height: 0.4rem;
+            font-size: 0.213333rem;
+            color: #666;
+            transition: 0.3s;
+
+            &:hover {
+                color: rgb(73, 27, 15)
+            }
+        }
+
+
+    }
+}
+
+.background-transiton {
+    width: 100%;
+    height: 1.333333rem;
+    background: -webkit-linear-gradient(top, #abb9e0, #a1749a, #690e23);
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 6.24rem;
+    background: url(../images/xiao-02.jpg) no-repeat;
+    background-size: 10rem;
+
+    .name {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        right: 0;
+
+        span {
+            color: #fff;
+            font-size: 0.186667rem;
+        }
+    }
+}
